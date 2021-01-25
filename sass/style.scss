@@ -1,0 +1,161 @@
+$cor-branca: white;
+$cor-preta: black;
+$cor-laranja: #DF6704;
+$cor-laranja2: #FFA051;
+$cor-toggler: rgba(255,255,255,.5);
+$cor-capa:linear-gradient(60deg,#944B0D,#D9AA83);
+$bg-menu: rgba(0,0,0,0.5);
+
+html, body, #home {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background: url(../img/capa.png),
+				url(../img/ruido.png),
+				$cor-capa;
+				background-attachment: fixed;
+				font-family: Helvetica,Arial,sans-serif;
+}
+
+nav.navbar-transparente {
+	background: $bg-menu;
+	padding: 15px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: $cor-branca;
+	&:hover {
+		color: $cor-laranja2;
+	}
+}
+
+.navbar-light .navbar-toggler {
+    color: $cor-toggler;
+    border-color: $cor-toggler;
+}
+
+.divisor {
+	width: 2px;
+	background: $cor-branca;
+	margin: 5px 15px;
+}
+
+/* Capa
+------------------------*/
+.capa {
+	text-align: center;
+}
+
+.btn-custom {
+	color: $cor-branca;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;
+	transition: background 0.5s, color 0.5s;
+	padding: 15px 20px;
+}
+
+.btn-laranja {
+	background: $cor-laranja2;
+	&:hover {
+		background: $cor-laranja;
+		color: $cor-branca;
+	}
+}
+
+.btn-branco {
+	border: 2px solid $cor-branca;
+	&:hover {
+		background-color: $cor-branca;
+		color: $cor-laranja2;
+	}
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+	width: 3%;
+}
+
+/* Tipografia
+------------------------*/
+h1 {
+	font-size: 5em;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	color: $cor-branca;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+/* Estrutura de Conteudos
+------------------------*/
+#servicos {
+	background: $cor-branca;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	& p {
+		font-size: 1.2em;
+	}
+	& h2, h3 {
+		color: $cor-laranja;
+	}
+}
+
+.albuns {
+	padding: 15px 0;
+}
+
+#recursos {
+	padding: 15px 0;
+	color: $cor-branca;
+}
+
+.rotacao {
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	padding-left: 80px; 
+}
+
+/* Rodapé
+------------------------*/
+footer {
+	background: $cor-preta;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+	& ul {
+		list-style:none;
+		& li {
+			float: right; 
+			margin: 0 5px;
+		}
+	}
+	& h4 {
+		color: $cor-laranja;
+		font-size: 0.9em;
+		text-transform: uppercase;
+	}
+	& .navbar-nav a {
+		color: $cor-branca;
+		font-size: 0.8em;
+		&:hover {
+			color: $cor-laranja2;
+			text-decoration: none;
+		}
+	}
+}
+

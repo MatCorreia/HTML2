@@ -1,0 +1,123 @@
+@charset "UTF-8";
+html, body, #home {
+  height: 100%;
+  overflow-x: hidden; }
+
+body {
+  background: url(../img/capa.png), url(../img/ruido.png), linear-gradient(60deg, #944B0D, #D9AA83);
+  background-attachment: fixed;
+  font-family: Helvetica,Arial,sans-serif; }
+
+nav.navbar-transparente {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 0px; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white; }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #FFA051; }
+
+.navbar-light .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5); }
+
+.divisor {
+  width: 2px;
+  background: white;
+  margin: 5px 15px; }
+
+/* Capa
+------------------------*/
+.capa {
+  text-align: center; }
+
+.btn-custom {
+  color: white;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  text-transform: uppercase;
+  transition: background 0.5s, color 0.5s;
+  padding: 15px 20px; }
+
+.btn-laranja {
+  background: #FFA051; }
+  .btn-laranja:hover {
+    background: #DF6704;
+    color: white; }
+
+.btn-branco {
+  border: 2px solid white; }
+  .btn-branco:hover {
+    background-color: white;
+    color: #FFA051; }
+
+.carousel-control-next, .carousel-control-prev {
+  width: 3%; }
+
+/* Tipografia
+------------------------*/
+h1 {
+  font-size: 5em;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+  color: white; }
+
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: -0.04em; }
+
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -0.04em; }
+
+/* Estrutura de Conteudos
+------------------------*/
+#servicos {
+  background: white;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  #servicos p {
+    font-size: 1.2em; }
+  #servicos h2, #servicos h3 {
+    color: #DF6704; }
+
+.albuns {
+  padding: 15px 0; }
+
+#recursos {
+  padding: 15px 0;
+  color: white; }
+
+.rotacao {
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  padding-left: 80px; }
+
+/* Rodapé
+------------------------*/
+footer {
+  background: black;
+  padding: 50px 0px 20px 0px;
+  position: relative; }
+  footer ul {
+    list-style: none; }
+    footer ul li {
+      float: right;
+      margin: 0 5px; }
+  footer h4 {
+    color: #DF6704;
+    font-size: 0.9em;
+    text-transform: uppercase; }
+  footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em; }
+    footer .navbar-nav a:hover {
+      color: #FFA051;
+      text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
